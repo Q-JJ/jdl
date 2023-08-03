@@ -100,7 +100,7 @@ export const asyncRouterMap = [
 					routerType:'leftmenu',
 					 
 			 },
-	  	 component:Content,
+	  	 component: () => import('@/page/infoManage/infoShow'),
 			 
 		},
 		{
@@ -111,7 +111,7 @@ export const asyncRouterMap = [
 				icon: 'iconinfo',
 				routerType:'leftmenu',
 			},
-			component:Content,
+			component: () => import('@/page/infoManage/infoModify'),
 			 
 		 }
 	  ]

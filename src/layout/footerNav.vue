@@ -4,7 +4,7 @@
  * @Author: JnannJ
  * @Date: 2023-07-31 17:35:49
  * @LastEditors: JnannJ
- * @LastEditTime: 2023-08-01 18:43:56
+ * @LastEditTime: 2023-08-03 14:53:40
 -->
 <template>
 	 <div class='footer'>
@@ -33,6 +33,7 @@ export default {
 
 <style lang="less">
 	.footer{
+         
         width: 100%;
         padding: 10px 0;
         font-size:14px;

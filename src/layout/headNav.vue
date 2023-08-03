@@ -5,7 +5,6 @@
     id="header_container"
   >
     <div class="right-nav" ref="rightNav">
-      <top-menu></top-menu>
       <div class="userinfo-right rflex">
         <div class="notify-row">
           <ul class="top-menu">
@@ -26,7 +25,7 @@
                     {{ $t(`commons.${name}`) }}</span
                   >
                 </div>
-                <img :src="avatar" class="avatar" alt="" />
+                <img src="../assets/img/logo.png" class="avatar" alt="" />
               </template>
               <el-menu-item index="2-1" @click="setDialogInfo('info')">{{
                 $t("commons.infoShow")
@@ -63,7 +62,9 @@ export default {
     },
   },
   created() {},
-  mounted() {},
+  mounted() {
+    console.log('this  :>> ', this.avatar);
+  },
   methods: {
     logout() {
       this.$store.dispatch("LogOut").then(() => {
@@ -107,7 +108,7 @@ export default {
     flex: 1;
     width: calc(100% - 180px);
     padding-right: 15px;
-    justify-content: space-between;
+    justify-content: right;
     box-shadow: 0px 2px 5px 0px rgba(237, 233, 233, 0.5);
     .userinfo-right {
       width: 320px;

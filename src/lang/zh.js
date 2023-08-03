@@ -4,12 +4,11 @@
  * @Author: JnannJ
  * @Date: 2023-07-31 17:35:49
  * @LastEditors: JnannJ
- * @LastEditTime: 2023-08-01 15:00:42
+ * @LastEditTime: 2023-08-03 11:15:23
  */
 const zh = {
     // layout
     commons: {
-      xiaoai: '小爱',
       admin: '管理员',
       editor: '赵晓编',
       quit: '退出',

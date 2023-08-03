@@ -1,6 +1,6 @@
 <template>
-		<section class="data_section" ref="data_section"> 
-		
+		<div class="fillcontain"> 
+			<div class="contain">
 				<el-row :gutter="10" class="row_list">
 					<el-col :span="8">
 						<div class="row_left row_base">
@@ -33,9 +33,9 @@
 							<el-col :span="6">
 								<div class="extenedBgcolor data_list rflex">
 									<div class="leftItem cflex wflex">
-										<p class="investor">{{ $t('index.potentialInvestor') }}</p>
-										<p class="number">686<span class="perTitle">({{ $t('index.person') }})</span></p>
-										<p class="cardText">Decreased by 10%</p>
+										<p class="investor">库存量</p>
+										<p class="number">500<span class="perTitle">(吨)</span></p>
+										<p class="cardText">桂万钢</p>
 									</div>
 									<div class="rightItem">
 										<icon-svg icon-class="iconpay2" />
@@ -84,8 +84,8 @@
 		
 			
 			 
-			
-		</section>
+			</div>
+		</div>
 </template>
 
 <script>
@@ -107,8 +107,16 @@
 </script>
 
 <style lang="less" scoped>
-	.data_section{
-		margin: 20px;
+
+ 
+    .contain{
+        border-radius: 5px;
+        height: 100%;
+        background: #fff;
+        
+    }
+	.fillcontain{
+		height: calc(100% - 30px);
 		border-radius: 2px;
 		.row_list{
 			margin-bottom: 20px;
@@ -118,21 +126,6 @@
 				background: #fff;
 				border-radius: 6px;
 				height: 120px;
-			}
-		}
-		.order_list{
-			.orderArea{
-				width: 100%;
-				height: 300px;
-				background: #fff !important;
-				border-radius: 6px;
-				box-sizing: border-box;
-				padding: 10px;
-				padding-top: 40px;
-				overflow: hidden;
-			}
-			.orderbarArea{
-				height: 370px;
 			}
 		}
 		.data_list{

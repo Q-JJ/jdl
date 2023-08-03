@@ -49,13 +49,15 @@
 <style scoped lang='less'>
     .home{
         .menu_right{
+            
             overflow: auto;
             position: absolute;
             right:0;
             top:0;
             bottom:0;
-            background:#F6F7FC;
+            background:#f0f2f5;
             .menu_content{
+                height: calc(100% - 110px);
                 position: relative;
                 margin-top:60px;
                 width:100%;

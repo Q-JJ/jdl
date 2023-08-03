@@ -70,7 +70,7 @@ export default {
         userList = {
             roles: ['admin'],
             name:'admin',
-            avatar:'https://wx.qlogo.cn/mmopen/vi_32/un2HbJJc6eiaviaibvMgiasFNlVDlNOb9E6WCpCrsO4wMMhHIbsvTkAbIehLwROVFlu8dLMcg00t3ZtOcgCCdcxlZA/132'
+            avatar:'/JDLWeb/src/assets/img/logo.png'
         }
     }else if(data.token === 'editor'){
         userList = {

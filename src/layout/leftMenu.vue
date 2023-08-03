@@ -4,7 +4,7 @@
       <img
         :class="['logo', { closeLogo: !sidebar.opened }]"
         :src="logo"
-        alt="小爱admin"
+        alt="嘉得利"
       />
       <span class="title" v-show="sidebar.opened"><i>嘉得利钢铁</i></span>
     </div>

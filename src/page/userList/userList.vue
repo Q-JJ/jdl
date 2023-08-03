@@ -2,7 +2,7 @@
     <div class="fillcontain">
         <div class="contain">
           <div class="table_container">
-            <el-table
+            <!-- <el-table
                  v-loading="loading"
                  :data="tableData"
                  border
@@ -66,7 +66,9 @@
                    align='center'>
                 </el-table-column>
             </el-table>
-           <el-row>
+            -->
+           
+            <el-row>
                 <el-col :span="24">
                     <div class="pagination">
                         <el-pagination
@@ -137,17 +139,19 @@
 
 <style lang="less" scoped>
     .fillcontain{
-        padding-bottom: 0;
+        height: calc(100% - 30px);
     }
     .contain{
+        border-radius: 5px;
+        height: 100%;
         background: #fff;
-        padding: 10px;
-        margin-bottom: 20px;
+        
     }
    .pagination{
        padding: 10px 20px;
        text-align: right;
    }
+ 
 </style>
 
 
